@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Guidelines de l’administration fédérale</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/admin.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+
+<section>
+  <h2>Web Guidelines de l’administration fédérale</h2>
+  <p>Antistatique – Comptes rendus d’analyse</p>
+</section>
+
+<section class="left">
+  <p><b>Simon Perdisat</b>, développeur chez Antistatique</p>
+  <p class="quote">Convaincu de l'importance du digital pour les gouvernements.<br>
+  <a href="mailto:simon@antistatique.net">simon@antistatique.net</a></p>
+  
+  <p><b>Yann Gouffon</b>, développeur front end chez Antistatique</p>
+  <p class="quote">Adepte de la modularité et de l'optimisation des processus.<br>
+  <a href="mailto:yann@antistatique.net">yann@antistatique.net</a></p>
+  
+</section>
+
+<section>
+  <img src="img/intro.png">
+</section>
+
+<section>
+  <h2>Avant tout</h2>
+  <p class="quote">
+    Notre compte rendu est non exaustif. Les points relevés sont d'importances diverses.
+  </p>
+</section>
+
+<section>
+  <h2>Notre approche</h2>
+  <h4 class="fragment">KISS</h4>
+  <p class="fragment">Keep it simple, stupid</p>
+</section>
+
+<section>
+  <h2>Centré utilisateur</h2>
+  <p class="quote">Permettre à l’utilisateur de faire des actions et trouver l’information de façon simple et efficace.</p>
+</section>
+
+<section>
+  <h2>Priorité au contenu</h2>
+  <p class="fragment quote">L’objectif principal du design d’interface est d'<b>estomper</b> le logiciel.</p>
+  <p class="fragment quote">Le <b>contenu</b> est <b>l'expérience</b> – pas de séparation.</p>
+  <p class="fragment quote">Le contenu doit découler d’une <b>stratégie</b></p>
+</section>
+
+<section>
+  <h2>Modularité</h2>
+  <p class="fragment quote">Penser chaque élément de façon <b>autonome</b>.</p>
+  <p class="fragment quote">Implique de développer chaque élément <b>hors contexte</b> pour être en mesure de le faire fonctionner partout.</p>
+</section>
+
+<section>
+  <h1>Remarques générales</h1>
+</section>
+
+<section>
+  <p class="quote">
+    <b>L’anglais</b> s’impose dans les métiers du web et tout particulièrement pour de la documentation technique.
+  </p>
+</section>
+
+<section>
+  <h3>Frameworks existants ?</h3>
+  <p class="fragment quote">
+    Utiliser le grid system, les libraries JS, les boutons, ... ?
+  </p>
+  <p class="fragment quote">
+    <b>2 approches</b> : se baser sur sa structure ou utiliser ses composants
+  </p>
+</section>
+
+<section>
+  <h2>Mobiliser la communauté</h2>
+  <ul>
+    <li class="fragment">Ouvrez le projet</li>
+    <li class="fragment">Choisir l’<b>Open Source</b> (MIT + GPL3)</li>
+    <li class="fragment">Utilisez <b>Github</b> ou équivalent</li>
+    <li class="fragment">Participez à des <b>événements</b> (Webmardi, UX Romandie,…) </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Présentation du Guideline</h2>
+</section>
+
+<section>
+  <p class="quote">
+    <b>Utiliser le navigateur</b> plutôt que des “iframes”
+  </p>
+  <br>
+  <img src="img/browser.png">
+</section>
+
+<section>
+  <p class="quote">
+    Du code <b>lisible</b>, pas de Frutiger.
+  </p>
+  <br>
+  <img src="img/code.png" alt="">
+  <br><br>
+  <img src="img/subl.png" alt="">
+</section>
+
+<section>
+  <h1>UX</h1>
+  <h3>User Experience</h3>
+</section>
+
+<section>
+  <h2>Navigation & Structure</h2>
+  <img src="img/navigation.png" alt="">
+</section>
+
+<section>
+  <ul>
+    <li class="fragment">Adaptation <b>mobile</b> compliquée</li>
+    <li class="fragment">Privilégier une <b>structure cohérente</b></li>
+    <li class="fragment">Guider l'utilisateur</li>
+  </ul>
+</section>
+
+<section>
+  <img src="img/gov1.png" alt="">
+</section>
+
+<section>
+  <img src="img/gov2.png" alt="">
+</section>
+
+<section>
+  <h2>Menus riches</h2>
+  <img src="img/rich.png" alt="">
+  <p class="quote">
+    Les navigations <b>riches</b> et <b>polyvalentes</b> sont <b>dangereuses</b>. <a href="http://www.uie.com/articles/mega_menus/">&gt; Article sur le sujet</a>
+  </p>
+  <ul>
+    <li class="fragment"><b>Perte d’identification</b> de la nature de l’élément</li>
+    <li class="fragment"><b>Accès compliqué</b> si mauvais clic</li>
+    <li class="fragment">De bien <b>meilleures solutions</b> existent</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Breadcrump</h2>
+  <img src="img/breadcrumb.png" alt="">
+  <p class="quote">
+    Ne pas <b>masquer</b> sur mobile!
+  </p>
+  <p class="quote">
+    <b>Trop d’éléments</b> ? Certainement un problème de structure.
+  </p>
+</section>
+
+<section>
+  <h2>Formulaire</h2>
+  <img src="img/form.png" alt="">
+  <p class="quote">
+    Le rouge comme couleur “active” donne l’impression d’une <b>erreur</b> sur les champs du formulaire.
+  </p>
+</section>
+
+<section>
+  <h2>Couleurs</h2>
+  <img src="img/color.png" alt="">
+  <p class="quote">
+    Donner de “vrais” <b>noms</b> aux couleurs. “Rot” et “Rot 2” ne sont pas faciles identifier par leur nom.<bR>
+    <br>
+    Monza, Red,  Mine Shaft, Boulder, … you name it :)
+  </p>
+</section>
+
+<section>
+  <h2>Header mobile</h2>
+  <img src="img/mobile-nav.png" alt="">
+  <p class="quote">
+    A quoi sert le X à côté de la recherche?
+  </p>
+  <p class="quote">
+    Cacher (scrool up) le changement de langue et le titre complet risque de perdre des utilisateurs
+  </p>
+</section>
+
+<section>
+  <h1>Technique</h1>
+  <h3>Less is more - Facilité d'implémentation</h3>
+</section>
+
+<section>
+  <h2>Grilles</h2>
+  <p class="quote">
+  Pourquoi utiliser <b>deux</b> systèmes de grille (Bootstrap et yaml_grid) ? Un suffit.
+  </p>
+</section>
+
+<section>
+  <h2>Styleguides dynamiques</h2>
+  <p class="quote">
+    Générer la documentation à partir du code.
+  </p>
+  <p class="quote fragment">
+    Ajouter des éléments HTML <b>directement</b> dans les styles et ainsi <b>générer</b> un styleguide <b>souple</b>, <b>évolutif</b> et totalement <b>modulaire</b>.
+  </p>
+</section>
+
+<section>
+  <img src="img/yss-back.jpg" alt="">
+</section>
+
+<section>
+  <img src="img/yss-front.png" alt="">
+</section>
+
+<section>
+  <h2>Conventions de développement</h2>
+  <ul>
+    <li class="fragment">L’arborescence des dossiers</li>
+    <li class="fragment">La nomenclature</li>
+    <li class="fragment">L’indentation du code</li>
+    <li class="fragment">La construction des commentaires</li>
+    <li class="fragment">README.txt !</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Librairies "vendors"</h2>
+  <p class="quote">
+    Mélangées parmi le code…
+  </p>
+  <p class="quote">
+    Nécessité de <b>séparer</b> dépendances et code produit pour <b>éviter l’amalgame</b>.<br>
+    ⇒ Utiliser un <b>gestionnaire de dépendances (<a href="http://bower.io">Bower</a>)</b>
+  </p>
+</section>
+
+<section>
+  <h2>Utilisation du précompilateur LESS</h2>
+  <ul>
+    <li class="fragment">Limiter les niveaux d'imbrication (éléments, classes,...)</li>
+    <li class="fragment">Ne <b>jamais</b> utiliser d’<b>IDs</b> dans les styles</li>
+    <li class="fragment">Intégrer les <b>Media Queries</b> directement dans le selecteur</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Performances</h2>
+  <ul>
+    <li class="fragment"><b>Réduire les dépendances</b> (JS, CSS) et les tenir à jour</li>
+    <li class="fragment">Optimiser les <b>fonts</b> (actuellement 2Mo! devrait être max 250ko)</li>
+    <li class="fragment"><b>Éviter les éléments complexes</b> comme des galeries JavaScript, sliders, timelines dynamiques et autres carousels.</li>
+    <li class="fragment">Tester les performances</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Versionning et releases</h2>
+  <ul>
+    <li class="fragment">Utiliser une numérotaion de versions sémentiques (<a href="http://semver.org">Semver</a>)</li>
+    <li class="fragment">En faire un "package"</li>
+    <li class="fragment">Faire des releases fréquentes</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Conslusion</h2>
+  <p class="quote">Il <b>ne suffit pas</b> de régler les problèmes énoncés et isolés, mais <b>revoir l'approche</b> en cherchant à <b>répondre aux bonnes questions</b> : stratégie de contenu, modularité, structure, besoins utilisateur,...</p>
+</section>
+
+<section>
+  <h1>Merci !</h1>
+</section>
+
+<section>
+  <h2>Sources externes</h2>
+  <a href="http://gigaom.com/2014/02/25/how-khan-academy-is-using-design-to-pave-the-way-for-the-future-of-educ">http://gigaom.com/2014/02/25/how-khan-academy-is-using-design-to-pave-the-way-for-the-future-of-educ</a><br><br>
+  <a href="http://chir.ag/projects/name-that-color">http://chir.ag/projects/name-that-color</a>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
